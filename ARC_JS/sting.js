@@ -63,3 +63,15 @@
 // let x = 'anjali'
 // console.log(x.slice(0 , 4));
 // end wala number include nhi hota hai 
+
+   
+// math method ke bare mai 
+
+// let num = Math.random() //ye random number lega hamesha 
+// console.log(num);
+
+// let num = Math.floor(Math.random()*6 ) + 1
+// console.log(num);
+
+// let num = 10.25525 ;
+// console.log(num.toFixed(1));
