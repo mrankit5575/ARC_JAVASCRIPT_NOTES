@@ -1,0 +1,135 @@
+Pehle simple definition 
+The Object type represents one of JavaScript's data types. 
+It is used to store various keyed collections and more complex entities.
+ Objects can be created using the Object() 
+ constructor or the object initializer / literal syntax.
+
+👉 "JavaScript me object ek dabba (box) jaisa hota hai jisme kaafi saari information hoti hai."
+Jaise ek student ke baare me alag-alag info ho sakti hai:
+Name
+Age
+Class
+Marks
+Is sab ko hum ek object me store kar sakte hain.
+
+Example
+let student = {
+  name: "Riya",
+  age: 10,
+  class: "5th"
+};
+
+Object ke data ko kaise access karein?
+Dot notation
+console.log(student.name);
+
+Bracket notation
+console.log(student["age"]);
+
+
+Object me new property add/update karna
+✔ Add new property
+student.gender = "Female";
+student.age = 11;
+
+Property delete karna
+delete student.class;
+
+Note:
+The delete keyword deletes both the value of the property and 
+the property itself.
+
+After deletion, the property cannot be used before 
+it is added back again.
+
+
+
+
+
+Activity
+Apna khud ka object banao
+let mySelf = {
+  name: "Aarav",
+  favColor: "Blue",
+  hobby: "Cricket"
+};
+
+Object Kyu use karte hain?
+JavaScript me agar hum ek student ke baare me alag-alag variables banaye:
+let name = "Riya";
+let age = 10;
+let className = "5th";
+
+To code messy ho jata hai aur related information alag-alag ho jati hai।
+Isliye object use karte hain, taaki related information ek jagah store ho.
+
+Example 
+let student = {
+  name: "Riya",
+  age: 10,
+  class: "5th",
+  isPassed: true
+};
+| Type           | Example             |
+| -------------- | ------------------- |
+| String         | "Riya"              |
+| Number         | 10                  |
+| Boolean        | true/false          |
+| Array          | ["Math", "English"] |
+| Another Object | { city: "Delhi" }   |
+| Function       | ()=>{}              |
+
+Object ke andar array ya aur object bhi ho sakta hai
+let student = {
+  name: "Riya",
+  subjects: ["Math", "English", "Science"],
+  address: {
+    city: "Delhi",
+    pin: 110001
+  }
+};
+Access:
+console.log(student.subjects[1]);  // English
+console.log(student.address.city); // Delhi
+
+Object me function (method) bhi ho sakta hai
+Jab object ke andar function ho to usko method bolte hain।
+ 
+ Example
+ let person = {
+  name: "Aman",
+  greet: function(){
+    console.log("Hello, my name is " + this.name);
+  }
+};
+
+person.greet();
+this.name means object ka name property.
+
+
+Note:
+You should declare objects with the const keyword.
+When an object is declared with const, 
+you cannot later reassign it to point to a different variable.
+It does not make the object unchangeable.
+ You can still modify its properties and values.
+
+
+ Nested Objects
+ Ek object ke andar another object hona.
+ Example
+  let student = {
+  name: "Riya",
+  age: 10,
+  address: {
+    city: "Delhi",
+    pin: 110001
+  }
+};
+Access kaise karein?
+console.log(student.name);   // Riya
+console.log(student.address.city);  // Delhi
+console.log(student.address.pin);   // 110001
+
+
+   
