@@ -68,6 +68,13 @@ console.log("Total =", sum);
 
 
 For Loop with Object
+yaha par for loop use nhi hota hai  yaha par for in loop use hota hai 
+reason ; 
+Reason 👇
+
+➡️ Object me index (0,1,2) nahi hote
+➡️ Object me key–value pair hote hain
+➡️ Isliye normal for loop kaam nahi karta
 Object key–value pair hota hai. Use print karne ke 2 ways:
 
 👉 Example 5: for...in loop se object print karna
