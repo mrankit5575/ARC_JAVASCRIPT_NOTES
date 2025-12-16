@@ -117,10 +117,40 @@ for (initialization; condition; increment/decrement) {
    // code
 }
 
-Example:
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
+ let student = {
+  name: "Ankit",
+  age: 20,
+  city: "Delhi"
+};
+
+for (let key in student) {
+  console.log(key);
 }
+🔹 Example 2: Key + Value dono print karna
+let student = {
+  name: "Ankit",
+  age: 20,
+  city: "Delhi"
+};
+
+for (let key in student) {
+  console.log(key + " : " + student[key]);
+}
+Example 3: Marks example (kids level)
+let marks = {
+  math: 80,
+  english: 70,
+  science: 90
+};
+
+for (let subject in marks) {
+  console.log(subject + " = " + marks[subject]);
+}
+
+
+
+
+
 
 🔹 5️⃣ FOR-OF LOOP
 👉 Kya hota hai?
