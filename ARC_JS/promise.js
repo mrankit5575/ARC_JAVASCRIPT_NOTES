@@ -55,6 +55,16 @@ let promise = new Promise((resolve, reject) => {
 });
 Explanation:
 
+:-  setTimeOut kyu kiya yaha per  :-                                            
+Real applications mein kuch kaam time lete hain, jaise:
+🌐 Server se data lana
+📁 File read karna
+🔗 API call karna
+💳 Payment process
+Agar JavaScript in sab ke liye wait kare:
+App freeze ho jayega
+  User experience kharab ho jayega
+
 2 second baad result aayega
 Promise fulfilled ho jayega
 6. Promise ko Use Karna – .then()
